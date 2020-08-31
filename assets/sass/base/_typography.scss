@@ -1,2 +1,12 @@
 /* Typography
 =====================*/
+
+h1,h2,h3,h4,h5{
+  font-family: "Raleway", sans-serif;
+  font-weight: $bold;
+}
+
+p, a, li{
+  font-family: $open-sans;
+  font-weight: $regular;
+}

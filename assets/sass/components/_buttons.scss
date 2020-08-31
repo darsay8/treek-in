@@ -1,0 +1,45 @@
+.btn {
+  border: none;
+  font-family: $raleway;
+  font-size: $medium;
+  font-weight: bold;
+  padding: 0.625em 1.25em;
+  cursor: pointer;
+  width: 7.5rem;
+
+  &__primary {
+    background-color: $ball-blue;
+    color: $white;
+
+    &-large {
+      font-family: $raleway;
+      font-size: $medium;
+      background-color: $ball-blue;
+      color: $white;
+      padding: 0.75em 5em;
+      width: 18.75rem;
+      border: none;
+
+      @include respond-to('xs'){
+        width: 15.7rem;
+        padding: 0.75em 2em
+
+      }
+
+      @include respond-to('s'){
+        width: 15.7rem;
+        padding: 0.75em 2em
+
+      }
+    }
+  }
+
+  &:hover {
+    background-color: $middle-blue;
+  }
+
+  &:focus, &:active {
+    background-color: $spanish-gray;
+  }
+
+}

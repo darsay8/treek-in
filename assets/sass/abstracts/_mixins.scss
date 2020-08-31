@@ -1,6 +1,13 @@
 // Mixins
 //=====================
 
+@mixin link{
+    font-family: $raleway;
+    text-decoration: none;
+    font-size: 1em;
+    color: black;
+}
+
 // Breakpoint Manager
 //=====================
 

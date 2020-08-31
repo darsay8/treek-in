@@ -1,2 +1,92 @@
 /* Footer
 =====================*/
+
+.footer {
+  background: $raising-black;
+  color: $silver-chalice;
+  height: 120px;
+  padding: 3% 10%;
+
+  &__content {
+    margin: 0;
+
+  }
+
+
+  a {
+    @include link;
+    color: $silver-chalice;
+    font-family: $open-sans;
+
+    &:hover {
+      color: $ball-blue;
+    }
+  }
+
+
+  ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+
+    li {
+      padding: 0 10px;
+    }
+  }
+
+
+  &__right {
+    text-align: end;
+  }
+
+
+  @include respond-to('xs') {
+
+    padding: 2% 5% 0;
+
+    &__right {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    ul {
+      justify-content: space-between;
+      padding-top: 5%;
+    }
+
+  }
+
+  @include respond-to('s') {
+
+    padding: 2% 5% 0;
+
+    &__right {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    ul {
+      justify-content: space-between;
+      padding-top: 5%;
+    }
+
+  }
+
+  @include respond-to('m') {
+
+    padding: 2% 5% 0;
+
+    &__right {
+      text-align: end;
+      margin-top: 0;
+    }
+
+    ul {
+      justify-content: start;
+      align-items: center;
+      padding-top: 0;
+    }
+
+  }
+
+}

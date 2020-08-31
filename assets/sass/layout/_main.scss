@@ -1,2 +1,130 @@
 /* Main
 =====================*/
+
+.prices__title, .features__title {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.features {
+
+  &__graph {
+    display: flex;
+    justify-content: center;
+    animation: op 1s ease-in-out 0s;
+  }
+
+  &__info {
+    width: 80%;
+  }
+
+  .info__title {
+    margin: 20px 0;
+  }
+
+  .info__pharagraph {
+    line-height: 30px;
+  }
+
+  @include respond-to('xs') {
+    &__info {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+
+  @include respond-to('s') {
+    margin-bottom: 300px;
+    &__info {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+
+  @include respond-to('m') {
+    margin-bottom: 0;
+    &__info {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+}
+
+.prices {
+  background-image: url("../img/bg-price.svg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__content {
+    align-content: end;
+    height: 900px;
+    padding-bottom: 50px;
+    margin-bottom: 0;
+  }
+
+  &__card {
+    display: flex;
+    justify-content: center;
+
+    &-left {
+      justify-self: end;
+      margin-right: 3%;
+    }
+
+    &-right {
+      justify-self: start;
+      margin-left: 3%;
+    }
+
+  }
+
+
+  &__title {
+    color: $white;
+  }
+
+  @include respond-to('xs') {
+    background-position: 70%;
+    &__content {
+      height: 210vh;
+    }
+  }
+
+  @include respond-to('s'){
+    &__card {
+      display: flex;
+      justify-content: center;
+
+      &-left {
+        justify-self: center;
+        margin-right: 0;
+      }
+
+      &-right {
+        justify-self: center;
+        margin-left: 0;
+      }
+
+    }
+  }
+
+  @include respond-to('m'){
+    &__card {
+      display: flex;
+      justify-content: center;
+
+      &-left {
+        justify-self: end;
+        margin-right: 3%;
+      }
+
+      &-right {
+        justify-self: start;
+        margin-right: 3%;
+      }
+
+    }
+  }
+
+}

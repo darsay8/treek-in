@@ -1,2 +1,81 @@
 /* Header
 =====================*/
+.header {
+  background: url("../img/bg-hero.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__content {
+    height: 1100px;
+  }
+
+  &__text {
+    position: relative;
+    top: 10%;
+    padding-left: 20%;
+    width: 70%;
+    height: 30%;
+  }
+
+  &__pharagraph {
+    line-height: 30px;
+  }
+
+  @include respond-to('xs') {
+
+    background-position: 70% 80px;
+
+    &__text {
+      top: 2%;
+      padding: 0;
+      margin: 0 auto;
+      width: 90%;
+      height: 20%;
+    }
+
+    &__content {
+      height: 600px;
+    }
+
+  }
+
+  @include respond-to('s') {
+
+    background-position: center;
+
+    &__text {
+      top: 2%;
+      padding-left: 10%;
+      margin: 0 auto;
+      width: 90%;
+      height: 20%;
+    }
+
+    &__content {
+      height: 600px;
+    }
+
+  }
+
+  @include respond-to('m') {
+
+    background-position: center center;
+
+    &__text {
+      position: relative;
+      top: 10%;
+      padding-left: 20%;
+      width: 70%;
+      height: 30%;
+    }
+
+    &__content {
+      height: 1100px;
+    }
+
+  }
+
+
+
+}

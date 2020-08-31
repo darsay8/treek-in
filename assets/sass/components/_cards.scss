@@ -1,0 +1,51 @@
+.card {
+  border: 1px solid $spanish-gray;
+  width: 400px;
+  height: 500px;
+  padding: 1.5em 3em;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  background: $white;
+  box-sizing: border-box;
+
+  &:hover {
+    -webkit-box-shadow: -1px 11px 16px 0px rgba(201, 193, 201, 1);
+    -moz-box-shadow: -1px 11px 16px 0px rgba(201, 193, 201, 1);
+    box-shadow: -1px 11px 16px 0px rgba(201, 193, 201, 1);
+  }
+
+  &__title, &__fee, &__items, &__btn {
+    margin: 5% 0;
+  }
+
+  &__line {
+    color: $silver-chalice;
+  }
+
+  &__item {
+    margin: 10% 0;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    height: 60%;
+  }
+
+
+
+  @include respond-to('xs'){
+    width: 350px;
+    padding: 1.5em 3em;
+
+  }
+
+  @include respond-to('s'){
+    width: 350px;
+    padding: 1.5em 3em;
+
+  }
+
+}
